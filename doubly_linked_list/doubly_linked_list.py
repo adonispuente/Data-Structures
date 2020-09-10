@@ -159,13 +159,6 @@ class DoublyLinkedList:
 
             # handles case where the head is moved to end of 2 element doubly linked list
             if current == self.head:
-                # oldTail = self.tail
-                # oldTail.next = current
-                # self.tail = current
-                # self.head = oldTail
-                # oldTail.next = current
-                # oldTail.prev = None
-                # current.next = None
                 oldTail = self.tail  # save old tail
                 oldTail.next = current  # set old tail next to current node
                 self.head = current.next  # set head to current's next node
